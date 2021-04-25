@@ -1,0 +1,1290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6426364-7145-460F-9339-B8F5BC9FF7ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>quest_project</RootNamespace>
+    <AssemblyName>quest project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\Documents\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.1.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.1.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XanderUI">
+      <HintPath>D:\XanderUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="developer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="developer.Designer.cs">
+      <DependentUpon>developer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leader.Designer.cs">
+      <DependentUpon>leader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager.Designer.cs">
+      <DependentUpon>manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="privacy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="privacy.Designer.cs">
+      <DependentUpon>privacy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="questprojDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet30.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet30.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet33.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet33.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet34.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet34.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet35.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet35.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet36.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet36.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet37.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet37.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet38.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet38.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet39.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet39.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet40.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet40.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet42.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet42.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet43.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet43.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet44.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet44.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet45.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet45.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet46.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet46.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet47.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet47.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet48.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet48.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet49.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet49.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet50.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet50.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet52.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet52.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet53.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet53.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet54.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet54.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet55.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet55.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet56.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet56.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet57.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet57.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet58.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet58.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet59.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet59.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet60.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet60.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet61.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet61.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet62.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet62.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet63.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet63.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet64.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet64.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet65.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet65.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet66.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet66.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet67.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet67.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet68.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet68.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="questprojDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>questprojDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="super.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="super.Designer.cs">
+      <DependentUpon>super.cs</DependentUpon>
+    </Compile>
+    <Compile Include="terms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="terms.Designer.cs">
+      <DependentUpon>terms.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="developer.resx">
+      <DependentUpon>developer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leader.resx">
+      <DependentUpon>leader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager.resx">
+      <DependentUpon>manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="privacy.resx">
+      <DependentUpon>privacy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="super.resx">
+      <DependentUpon>super.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="terms.resx">
+      <DependentUpon>terms.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="questprojDataSet.xsc">
+      <DependentUpon>questprojDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet.xss">
+      <DependentUpon>questprojDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet1.xsc">
+      <DependentUpon>questprojDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet1.xss">
+      <DependentUpon>questprojDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet10.xsc">
+      <DependentUpon>questprojDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet10.xss">
+      <DependentUpon>questprojDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet11.xsc">
+      <DependentUpon>questprojDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet11.xss">
+      <DependentUpon>questprojDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet12.xsc">
+      <DependentUpon>questprojDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet12.xss">
+      <DependentUpon>questprojDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet13.xsc">
+      <DependentUpon>questprojDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet13.xss">
+      <DependentUpon>questprojDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet14.xsc">
+      <DependentUpon>questprojDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet14.xss">
+      <DependentUpon>questprojDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet15.xsc">
+      <DependentUpon>questprojDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet15.xss">
+      <DependentUpon>questprojDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet16.xsc">
+      <DependentUpon>questprojDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet16.xss">
+      <DependentUpon>questprojDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet17.xsc">
+      <DependentUpon>questprojDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet17.xss">
+      <DependentUpon>questprojDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet18.xsc">
+      <DependentUpon>questprojDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet18.xss">
+      <DependentUpon>questprojDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet19.xsc">
+      <DependentUpon>questprojDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet19.xss">
+      <DependentUpon>questprojDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet2.xsc">
+      <DependentUpon>questprojDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet2.xss">
+      <DependentUpon>questprojDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet20.xsc">
+      <DependentUpon>questprojDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet20.xss">
+      <DependentUpon>questprojDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet21.xsc">
+      <DependentUpon>questprojDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet21.xss">
+      <DependentUpon>questprojDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet22.xsc">
+      <DependentUpon>questprojDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet22.xss">
+      <DependentUpon>questprojDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet23.xsc">
+      <DependentUpon>questprojDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet23.xss">
+      <DependentUpon>questprojDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet24.xsc">
+      <DependentUpon>questprojDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet24.xss">
+      <DependentUpon>questprojDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet25.xsc">
+      <DependentUpon>questprojDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet25.xss">
+      <DependentUpon>questprojDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet26.xsc">
+      <DependentUpon>questprojDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet26.xss">
+      <DependentUpon>questprojDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet27.xsc">
+      <DependentUpon>questprojDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet27.xss">
+      <DependentUpon>questprojDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet28.xsc">
+      <DependentUpon>questprojDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet28.xss">
+      <DependentUpon>questprojDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet29.xsc">
+      <DependentUpon>questprojDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet29.xss">
+      <DependentUpon>questprojDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet3.xsc">
+      <DependentUpon>questprojDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet3.xss">
+      <DependentUpon>questprojDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet30.xsc">
+      <DependentUpon>questprojDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet30.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet30.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet30.xss">
+      <DependentUpon>questprojDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet31.xsc">
+      <DependentUpon>questprojDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet31.xss">
+      <DependentUpon>questprojDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet32.xsc">
+      <DependentUpon>questprojDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet32.xss">
+      <DependentUpon>questprojDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet33.xsc">
+      <DependentUpon>questprojDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet33.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet33.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet33.xss">
+      <DependentUpon>questprojDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet34.xsc">
+      <DependentUpon>questprojDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet34.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet34.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet34.xss">
+      <DependentUpon>questprojDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet35.xsc">
+      <DependentUpon>questprojDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet35.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet35.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet35.xss">
+      <DependentUpon>questprojDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet36.xsc">
+      <DependentUpon>questprojDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet36.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet36.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet36.xss">
+      <DependentUpon>questprojDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet37.xsc">
+      <DependentUpon>questprojDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet37.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet37.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet37.xss">
+      <DependentUpon>questprojDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet38.xsc">
+      <DependentUpon>questprojDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet38.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet38.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet38.xss">
+      <DependentUpon>questprojDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet39.xsc">
+      <DependentUpon>questprojDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet39.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet39.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet39.xss">
+      <DependentUpon>questprojDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet4.xsc">
+      <DependentUpon>questprojDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet4.xss">
+      <DependentUpon>questprojDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet40.xsc">
+      <DependentUpon>questprojDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet40.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet40.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet40.xss">
+      <DependentUpon>questprojDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet41.xsc">
+      <DependentUpon>questprojDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet41.xss">
+      <DependentUpon>questprojDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet42.xsc">
+      <DependentUpon>questprojDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet42.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet42.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet42.xss">
+      <DependentUpon>questprojDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet43.xsc">
+      <DependentUpon>questprojDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet43.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet43.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet43.xss">
+      <DependentUpon>questprojDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet44.xsc">
+      <DependentUpon>questprojDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet44.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet44.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet44.xss">
+      <DependentUpon>questprojDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet45.xsc">
+      <DependentUpon>questprojDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet45.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet45.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet45.xss">
+      <DependentUpon>questprojDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet46.xsc">
+      <DependentUpon>questprojDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet46.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet46.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet46.xss">
+      <DependentUpon>questprojDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet47.xsc">
+      <DependentUpon>questprojDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet47.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet47.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet47.xss">
+      <DependentUpon>questprojDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet48.xsc">
+      <DependentUpon>questprojDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet48.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet48.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet48.xss">
+      <DependentUpon>questprojDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet49.xsc">
+      <DependentUpon>questprojDataSet49.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet49.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet49.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet49.xss">
+      <DependentUpon>questprojDataSet49.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet5.xsc">
+      <DependentUpon>questprojDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet5.xss">
+      <DependentUpon>questprojDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet50.xsc">
+      <DependentUpon>questprojDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet50.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet50.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet50.xss">
+      <DependentUpon>questprojDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet51.xsc">
+      <DependentUpon>questprojDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet51.xss">
+      <DependentUpon>questprojDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet52.xsc">
+      <DependentUpon>questprojDataSet52.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet52.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet52.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet52.xss">
+      <DependentUpon>questprojDataSet52.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet53.xsc">
+      <DependentUpon>questprojDataSet53.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet53.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet53.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet53.xss">
+      <DependentUpon>questprojDataSet53.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet54.xsc">
+      <DependentUpon>questprojDataSet54.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet54.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet54.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet54.xss">
+      <DependentUpon>questprojDataSet54.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet55.xsc">
+      <DependentUpon>questprojDataSet55.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet55.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet55.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet55.xss">
+      <DependentUpon>questprojDataSet55.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet56.xsc">
+      <DependentUpon>questprojDataSet56.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet56.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet56.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet56.xss">
+      <DependentUpon>questprojDataSet56.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet57.xsc">
+      <DependentUpon>questprojDataSet57.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet57.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet57.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet57.xss">
+      <DependentUpon>questprojDataSet57.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet58.xsc">
+      <DependentUpon>questprojDataSet58.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet58.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet58.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet58.xss">
+      <DependentUpon>questprojDataSet58.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet59.xsc">
+      <DependentUpon>questprojDataSet59.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet59.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet59.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet59.xss">
+      <DependentUpon>questprojDataSet59.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet6.xsc">
+      <DependentUpon>questprojDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet6.xss">
+      <DependentUpon>questprojDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet60.xsc">
+      <DependentUpon>questprojDataSet60.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet60.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet60.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet60.xss">
+      <DependentUpon>questprojDataSet60.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet61.xsc">
+      <DependentUpon>questprojDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet61.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet61.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet61.xss">
+      <DependentUpon>questprojDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet62.xsc">
+      <DependentUpon>questprojDataSet62.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet62.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet62.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet62.xss">
+      <DependentUpon>questprojDataSet62.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet63.xsc">
+      <DependentUpon>questprojDataSet63.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet63.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet63.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet63.xss">
+      <DependentUpon>questprojDataSet63.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet64.xsc">
+      <DependentUpon>questprojDataSet64.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet64.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet64.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet64.xss">
+      <DependentUpon>questprojDataSet64.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet65.xsc">
+      <DependentUpon>questprojDataSet65.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet65.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet65.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet65.xss">
+      <DependentUpon>questprojDataSet65.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet66.xsc">
+      <DependentUpon>questprojDataSet66.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet66.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet66.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet66.xss">
+      <DependentUpon>questprojDataSet66.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet67.xsc">
+      <DependentUpon>questprojDataSet67.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet67.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet67.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet67.xss">
+      <DependentUpon>questprojDataSet67.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet68.xsc">
+      <DependentUpon>questprojDataSet68.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet68.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet68.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet68.xss">
+      <DependentUpon>questprojDataSet68.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet7.xsc">
+      <DependentUpon>questprojDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet7.xss">
+      <DependentUpon>questprojDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet8.xsc">
+      <DependentUpon>questprojDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet8.xss">
+      <DependentUpon>questprojDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet9.xsc">
+      <DependentUpon>questprojDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="questprojDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>questprojDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="questprojDataSet9.xss">
+      <DependentUpon>questprojDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

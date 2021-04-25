@@ -1,0 +1,26 @@
+C:\Users\PCFCT\source\repos\quest project\bin\Debug\quest project.exe.config
+C:\Users\PCFCT\source\repos\quest project\bin\Debug\quest project.exe
+C:\Users\PCFCT\source\repos\quest project\bin\Debug\quest project.pdb
+C:\Users\PCFCT\source\repos\quest project\bin\Debug\Guna.UI2.dll
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest project.csprojAssemblyReference.cache
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest_project.Form1.resources
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest_project.Login.resources
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest_project.Properties.Resources.resources
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest project.csproj.GenerateResource.cache
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest project.csproj.CoreCompileInputs.cache
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest project.csproj.CopyComplete
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest project.exe
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest project.pdb
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest_project.admin.resources
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest_project.super.resources
+C:\Users\PCFCT\source\repos\quest project\bin\Debug\MetroFramework.Design.dll
+C:\Users\PCFCT\source\repos\quest project\bin\Debug\MetroFramework.dll
+C:\Users\PCFCT\source\repos\quest project\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\PCFCT\source\repos\quest project\bin\Debug\XanderUI.dll
+C:\Users\PCFCT\source\repos\quest project\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest_project.developer.resources
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest_project.leader.resources
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest_project.manager.resources
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest_project.about.resources
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest_project.privacy.resources
+C:\Users\PCFCT\source\repos\quest project\obj\Debug\quest_project.terms.resources
